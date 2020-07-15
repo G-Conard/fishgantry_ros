@@ -222,7 +222,7 @@ class FishBrainManager():
         else:
             # rospy.logwarn((abs(x-self.pose.pose.position.x)/self.dt)>self.linrate)
             newx = x
-        if((abs(x-self.pose.pose.position.y)/self.dt)>self.linrate):
+        if((abs(y-self.pose.pose.position.y)/self.dt)>self.linrate):
             newy=self.pose.pose.position.y +sign(y-self.pose.pose.position.y)*self.linrate*self.dt
             # rospy.logwarn(newy)
         else:
